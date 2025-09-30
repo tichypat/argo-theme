@@ -4,7 +4,7 @@
 add_theme_support('menus'); 
 register_nav_menus( // Adds menu locations
     [
-        'top-navbar' => __('Top Navbar', 'boost_it'),
+        'top-navbar' => __('Top Navbar', 'starter-theme'),
     ]
 );
 
