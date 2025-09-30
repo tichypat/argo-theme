@@ -39,7 +39,7 @@
                     </div>   
 
                     <!-- Offcanvas toggler -->
-                    <a href="#" class="offcanvas-toggler d-block d-lg-none" aria-label="<?php echo __('Zobrazit navigaci', 'boost-it-classic-theme'); ?>"
+                    <a href="#" class="offcanvas-toggler d-block d-lg-none" aria-label="<?php echo __('Zobrazit navigaci', 'starter-theme'); ?>"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
