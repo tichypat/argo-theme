@@ -58,3 +58,7 @@ require_once('inc/administration/enable-svg.php');
 require_once('inc/administration/remove-customizer.php');
 
 // Custom functions:
+require_once('inc/team-members-cpt.php');
+require_once('inc/administration/register-acf-fields.php');
+require_once('inc/register-blocks.php');
+require_once('inc/utils.php');
