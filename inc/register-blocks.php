@@ -1,8 +1,9 @@
 <?php
-// Register custom ACF blocks
+// Register ACF blocks
 add_action('acf/init', function () {
     if (function_exists('acf_register_block_type')) {
 
+        // Team Member Detail block
         acf_register_block_type([
             'name'            => 'team-member-detail',
             'title'           => __('Team Member Detail'),
@@ -15,6 +16,7 @@ add_action('acf/init', function () {
             'enqueue_style'   => get_template_directory_uri() . '/blocks/team-member-detail/team-member-detail.css',
         ]);
 
+        // Team Member Grid block 
         acf_register_block_type([
             'name'            => 'team-member-grid',
             'title'           => __('Team Member Grid'),
