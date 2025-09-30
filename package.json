@@ -1,0 +1,14 @@
+{
+  "name": "starter-theme",
+  "version": "0.1.0",
+  "description": "Default starter theme package with Guttenberg blocks",
+  "author": "Patrik Tichý",
+  "license": "GPL-2.0-or-later",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

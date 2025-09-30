@@ -1,0 +1,121 @@
+@import "./vars";
+
+html {
+    scroll-behavior: smooth;
+
+    @media screen and (max-width: $lg){
+        font-size: 15px;
+    }
+    @media screen and (max-width: $md){
+        font-size: 14px;
+    }
+}
+
+::selection {
+    /* WebKit/Blink Browsers */
+    background: rgb(from $primary r g b / .5);
+    color: $white;
+}
+
+::-moz-selection {
+    /* Gecko Browsers */
+    background: rgb(from $primary r g b / .5);
+    color: $white;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: $gray;
+    color: $black;
+    overflow-x: clip;
+
+    main {
+        min-height: 60vh; // So that the footer doesn't float 
+    }
+
+    @media screen and (max-width: $md) {
+        br {
+            display: none;
+        }
+    }
+}
+
+
+// Transitions
+a, svg, svg * {
+    transition: .3s;
+    color: $primary;
+}
+
+
+// Buttons
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+    white-space: nowrap; 
+    max-width: 100%;
+    
+    transition: .3s;
+
+    /* Sizes: */
+    // Default size: small 
+    &, &.small {
+        padding: 0.375rem 2.5rem;
+        min-width: 8.125rem; // 130px
+    } 
+    &.medium {
+        padding: 0.5rem 3.125rem;
+        min-width: 9.375rem; // 150px
+    }
+    &.large {
+        padding: 0.5rem 3.75rem;
+        min-width: 11.25rem; // 180px
+    }
+    &.extra-large {
+        padding: 0.75rem 4.375rem;
+        min-width: 12.5rem; // 200px
+    }
+
+    /* Styles */
+    // Default size: fill
+    &, &.fill {
+        background-color: $primary;
+        border: 1px solid $primary; // So the outline button has the same height
+        color: $white;
+
+        &:hover {
+            background-color: $black;
+            border-color: $black;
+            color: $white;
+        }
+    }
+    &.outline {
+        background-color: transparent !important;
+        border: 1px solid $primary; // So the outline button has the same height
+        color: $primary;
+
+        &:hover {
+            background-color: $black !important;
+            border-color: $black;
+        }
+    }
+
+    /* Rounded or sharp */
+    // Default size: sharp
+    &, &.sharp {
+        border-radius: 0px !important;
+    }
+    &.rounded {
+        border-radius: 999px !important;
+    }
+
+    // Disable min-width at mobile devices
+    @media screen and (max-width: $xs) {
+        min-width: 0;
+    }
+}
