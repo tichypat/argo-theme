@@ -1,0 +1,57 @@
+// Vars
+@import "../../styles/vars";
+
+.team-member-detail{
+    border-radius: 0 30px 30px 30px;
+    max-width: 600px;
+
+    @media screen and (max-width: $lg) { 
+        max-width: 100%;
+    }
+
+	.wrapper{
+        .image{
+            img{
+                border-radius: 50%;
+                object-fit: cover;
+                width: 200px;
+                height: 200px;
+                aspect-ratio: 1;
+            }
+
+            @media screen and (max-width: $md) { 
+                width: 100%;
+            }
+	    }
+
+		.content{
+            a{
+                text-decoration: none;
+
+                &:hover{
+                    color: $secondary;
+                }
+            }
+
+			.name{
+				font-size: 1.2rem;
+				font-weight: 600;
+			}
+
+			.position{
+				color: #7b7d7b;
+			}
+
+            p{
+                margin-bottom: .5rem;
+            }
+		}
+    }
+
+    .reviews{
+        .title{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+}

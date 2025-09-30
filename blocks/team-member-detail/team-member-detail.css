@@ -1,0 +1,51 @@
+:root {
+  --primary: #62c324;
+  --secondary: #23241f;
+  --white: #ffffff;
+  --gray: #daddd6;
+  --dark: #3c3c3c;
+  --black: #000000;
+}
+
+.team-member-detail {
+  border-radius: 0 30px 30px 30px;
+  max-width: 600px;
+}
+@media screen and (max-width: 991.98px) {
+  .team-member-detail {
+    max-width: 100%;
+  }
+}
+.team-member-detail .wrapper .image img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+  height: 200px;
+  aspect-ratio: 1;
+}
+@media screen and (max-width: 767.98px) {
+  .team-member-detail .wrapper .image {
+    width: 100%;
+  }
+}
+.team-member-detail .wrapper .content a {
+  text-decoration: none;
+}
+.team-member-detail .wrapper .content a:hover {
+  color: var(--secondary);
+}
+.team-member-detail .wrapper .content .name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.team-member-detail .wrapper .content .position {
+  color: #7b7d7b;
+}
+.team-member-detail .wrapper .content p {
+  margin-bottom: 0.5rem;
+}
+.team-member-detail .reviews .title {
+  font-size: 1rem;
+  font-weight: 600;
+}
