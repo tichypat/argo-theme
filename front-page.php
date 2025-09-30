@@ -2,6 +2,7 @@
 
 <main class="front-page">
     <div class="container text-center py-5 my-5">
+        <h1>Argo test task</h1>
         <?php the_content() ?>
     </div>
 </main>
